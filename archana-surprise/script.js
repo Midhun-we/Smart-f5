@@ -45,7 +45,7 @@ const answers = {
   hug: "Then imagine the biggest, warmest hug from me. No words needed. 🫂",
   food: "Done! Your favourite snacks, unlimited supply. 🍫",
   sleep: "A cozy blanket, a peaceful room and absolutely no worries. 🌙",
-  together: "That's my favourite answer. I wish I could be right there beside you. ❤️"
+  together: "That's my favourite answer. I wish I could be right there beside you. 💋❤️"
 };
 
 function answer(type) {
@@ -73,7 +73,7 @@ function openLetter() {
 function createFloatingHeart() {
   const heart = document.createElement("div");
   heart.className = "float-heart";
-  const symbols = ["♡", "♥", "✦", "💜", "✨"];
+  const symbols = ["♡", "♥", "✦", "😘", "✨","💋"];
   heart.innerText = symbols[Math.floor(Math.random() * symbols.length)];
   heart.style.left = Math.random() * 100 + "%";
   heart.style.animationDuration = (3 + Math.random() * 3) + "s";
@@ -83,7 +83,7 @@ function createFloatingHeart() {
 
 function celebrate() {
   document.getElementById("hugResponse").innerText =
-    "HUG RECEIVED, Ponneeeehhhh..! 🫂❤️ Sending you a million more. You are loved, sunshine!";
+    "HUG Kitty, Ponneeeehhhh..! 🫂❤️ Sending you a million more. You are loved, muthumaniiiii...!";
   for (let i = 0; i < 35; i++) setTimeout(createFloatingHeart, i * 80);
 }
 
