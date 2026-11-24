@@ -83,7 +83,7 @@ function createFloatingHeart() {
 
 function celebrate() {
   document.getElementById("hugResponse").innerText =
-    "HUG RECEIVED, ARCHANA! 🫂❤️ Sending you a million more. You are loved, sunshine!";
+    "HUG RECEIVED, Ponneeeehhhh..! 🫂❤️ Sending you a million more. You are loved, sunshine!";
   for (let i = 0; i < 35; i++) setTimeout(createFloatingHeart, i * 80);
 }
 
