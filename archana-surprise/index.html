@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b1b">
+  <title>Dear Archana ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky">
+    <div class="moon"></div>
+    <div class="stars" id="stars"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <div class="screen" id="welcome">
+    <div class="eyebrow">A UNIVERSE CREATED FOR ONE GIRL</div>
+    <div class="welcome-moon">☾</div>
+    <h1>Dear<br><span>Archana.</span></h1>
+    <p>Somewhere between a million stars, there's one person who makes my world a little more beautiful. That's you.</p>
+    <button class="glow-btn" onclick="enterWorld()">OPEN YOUR LITTLE UNIVERSE ✨</button>
+    <div class="bottom-note">EXCLUSIVELY MADE FOR ARCHANA ♡</div>
+  </div>
+
+  <main id="experience" class="hidden">
+    <section class="hero">
+      <div class="eyebrow">HEY, MY FAVOURITE GIRL</div>
+      <h1>It's all about<br><span>you, Archana.</span></h1>
+      <p class="hero-text">I know today might be a little uncomfortable. So tonight, I don't want you to worry about anything. No pressure, no expectations. Just a little reminder that somebody cares about you more than words can explain.</p>
+      <div class="scroll-hint">YOUR LITTLE WORLD IS WAITING ↓</div>
+    </section>
+
+    <section class="gift-section">
+      <div class="eyebrow">SOMETHING SPECIAL FOR YOU</div>
+      <h2>A tiny gift.<br>A million feelings.</h2>
+      <p>Archana, I saved something here for you.</p>
+      <div class="gift" onclick="openGift()" id="gift" role="button" tabindex="0" aria-label="Open your gift">
+        <div class="gift-lid"></div><div class="gift-box"><span>♡</span></div><div class="gift-ribbon"></div>
+      </div>
+      <p id="giftHint">Tap your gift to open it 🎁</p>
+      <div id="giftMessage" class="gift-message hidden">
+        <div class="gift-emoji">🧸</div>
+        <h3>Your personal teddy bear!</h3>
+        <p>Officially assigned to Archana: unlimited virtual hugs, unlimited love and a lifetime duty of making you smile.</p>
+        <div class="teddy-heart">❤️</div>
+      </div>
+    </section>
+
+    <section class="comfort-section">
+      <div class="eyebrow">YOUR LITTLE COMFORT CORNER</div>
+      <h2>What do you need<br>right now, Archana?</h2>
+      <p>Choose whatever your heart wants.</p>
+      <div class="comfort-grid">
+        <button onclick="choose('hug')"><span>🫂</span>A warm hug</button>
+        <button onclick="choose('rest')"><span>🌙</span>Some rest</button>
+        <button onclick="choose('love')"><span>💌</span>Sweet words</button>
+        <button onclick="choose('smile')"><span>✨</span>A little smile</button>
+      </div>
+      <div id="comfortResult" class="result" aria-live="polite">Your comfort is just one tap away. ♡</div>
+    </section>
+
+    <section class="question-section">
+      <div class="eyebrow">A LITTLE QUESTION FOR YOU</div>
+      <h2>If I could be<br>there right now...</h2>
+      <p>What would you choose?</p>
+      <div class="question-options">
+        <button onclick="answer('hug')">A long hug 🫂</button>
+        <button onclick="answer('food')">Favourite food 🍫</button>
+        <button onclick="answer('sleep')">Peaceful sleep 🌙</button>
+        <button onclick="answer('together')">You beside me ❤️</button>
+      </div>
+      <div id="answerResult" class="result" aria-live="polite">There's no wrong answer, sunshine.</div>
+    </section>
+
+    <section class="letter-section">
+      <div class="eyebrow">A MESSAGE FROM MY HEART</div>
+      <h2>Something I want<br>you to know...</h2>
+      <p>A little letter, written only for you.</p>
+      <div class="envelope" onclick="openLetter()" id="envelope" role="button" tabindex="0" aria-label="Open your letter">
+        <div class="envelope-back"></div>
+        <div class="letter-paper"><span>To my favourite person,</span><p>There is something I want to tell you...</p><small>Tap to read ♡</small></div>
+        <div class="envelope-front"></div><div class="envelope-flap"></div><div class="envelope-heart">♥</div>
+      </div>
+      <article id="letter" class="letter hidden">
+        <div class="letter-top">ONLY FOR ARCHANA ♡</div>
+        <h3>My dearest Archana,</h3>
+        <p>If I were there with you right now, I'd bring you your favourite food, make you comfortable and give you the longest hug ever.</p>
+        <p>I know some days are harder than others. And you don't have to pretend to be happy just because someone expects you to be.</p>
+        <p>I wish I could take away every little discomfort you're feeling right now. But until then, let these words remind you that you are cared for, appreciated and loved.</p>
+        <p>Never forget this, Archana: You are not just special on your happy days. You're special on every single day.</p>
+        <h3>Lots of love, always. ❤️</h3>
+      </article>
+    </section>
+
+    <section class="final-section">
+      <div class="final-heart">♥</div>
+      <div class="eyebrow">A LITTLE PROMISE FOR YOU</div>
+      <h1>Archana,<br><span>Stay magical.</span></h1>
+      <p>Even if today isn't perfect, I hope tomorrow brings you a little more comfort, a little more happiness and a thousand reasons to smile. You deserve kindness, even from yourself.</p>
+      <div class="signature">In every little universe, you matter. ♡</div>
+      <button class="glow-btn" onclick="celebrate()">SEND ME A HUG 🫂</button>
+      <div id="hugResponse" aria-live="polite"></div>
+      <div class="bottom-note">MADE WITH LOVE · JUST FOR ARCHANA</div>
+    </section>
+  </main>
+
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
